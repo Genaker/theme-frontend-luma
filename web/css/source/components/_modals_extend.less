@@ -58,7 +58,7 @@
 
     .modal-custom {
         .action-close {
-            .lib-css(margin, 15px);
+            .lib-css(margin, @indent__m);
         }
     }
 
@@ -82,8 +82,7 @@
 
     .modal-slide {
         .action-close {
-            margin: 15px;
-            padding: 0;
+            padding: @modal-slide-action-close__padding;
         }
 
         .page-main-actions {
@@ -148,9 +147,10 @@
             }
         }
     }
+}
 
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .modal-popup {
-        pointer-events: auto;
         &.modal-slide {
             .modal-inner-wrap[class] {
                 .lib-css(background-color, @modal-slide-mobile__background-color);
