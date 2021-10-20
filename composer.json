@@ -1,0 +1,23 @@
+{
+    "name": "magenxcommerce/theme-frontend-luma",
+    "description": "N/A",
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magenxcommerce/theme-frontend-blank": "100.2.*",
+        "magenxcommerce/framework": "101.0.*"
+    },
+    "type": "magento2-theme",
+    "version": "100.2.7",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    },
+    "replace": {
+        "magento/theme-frontend-luma": "*"
+    }
+}
